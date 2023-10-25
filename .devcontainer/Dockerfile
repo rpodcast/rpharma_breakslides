@@ -25,5 +25,5 @@ RUN apt-get update \
 
 # install R package dependencies
 # add / remove packages from line below (but keep httpgd, renv, languageserver
-RUN install2.r renv httpgd languageserver
+RUN install2.r renv httpgd languageserver remotes rmarkdown markdown countdown fs glue epoxy dplyr
 
