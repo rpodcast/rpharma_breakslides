@@ -1,0 +1,25 @@
+---
+format: 
+  revealjs:
+    transition: fade
+    background-transition: fade
+    auto-slide: 10000
+    loop: true
+    include-before-body: "_timer_gen_fragment.html"
+    chalkboard: true
+---
+
+## Break Time! {background-image=img_backgrounds/rph_background.png background-size='cover' background-opacity="0.5"}
+
+### We'll be back in a few minutes
+
+* Flex your data science skills with the TidyTuesday patient profile data set! <https://tidytues.day/2023/2023-10-24>
+* Don't forget to check out the Expo! A massive selection of innovative projects and knowledge
+
+--- 
+
+{{< tweet danoehm 1717506962353783198 >}}
+
+---
+
+{{< tweet AdityaDahiyaIAS 1717094642775208422 >}}

@@ -1,0 +1,35 @@
+---
+format: 
+  revealjs:
+    transition: fade
+    background-transition: fade
+    auto-slide: 10000
+    loop: true
+    include-before-body: "_timer_gen_fragment.html"
+---
+
+## Break Time! {background-image=img/file_109.png background-size='cover' background-opacity="0.2"}
+
+### We'll be back in a few minutes
+
+```{r}
+#| label: setup 
+#| include: false
+library(countdown)
+# import file paths to all images
+message(getwd())
+slide_imgs <- fs::dir_ls("img")
+```
+
+
+
+```{r eval=FALSE}
+#| label: create-slides
+#| echo: false 
+#| results: asis
+purrr::walk(sample(slide_imgs), ~{
+  header_text <- glue::glue("## {background-image='<<.x>>' background-size='cover'}", .open = "<<", .close = ">>")
+  cat(header_text, '\n\n')
+})
+```
+
